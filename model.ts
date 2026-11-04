@@ -1,4 +1,4 @@
-﻿// 1. TaskStatus literal union type
+﻿// Part 1: Task Model & Typed Operations
 export type TaskStatus = "todo" | "in-progress" | "done";
 
 // 2. Task interface
