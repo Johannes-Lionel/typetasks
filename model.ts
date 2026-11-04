@@ -1,4 +1,4 @@
-﻿// 1. TaskStatus literal union type
+﻿// 1. TaskStatus literal union
 export type TaskStatus = "todo" | "in-progress" | "done";
 
 // 2. Task interface
@@ -30,12 +30,12 @@ export function filterByStatus(tasks: Task[], status: TaskStatus): Task[] {
   return tasks.filter((t) => t.status === status);
 }
 
-// 6. Custom extra operation: deleteTask
+// 6. Custom Operation 1: deleteTask
 export function deleteTask(tasks: Task[], id: number): Task[] {
   return tasks.filter((t) => t.id !== id);
 }
 
-// 7. Custom extra operation: advanceTask
+// 7. Custom Operation 2: advanceTask (todo -> in-progress -> done)
 export function advanceTask(tasks: Task[], id: number): Task[] {
   return tasks.map((t) => {
     if (t.id !== id) return t;

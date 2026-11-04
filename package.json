@@ -6,10 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johannes-Lionel/typetasks.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
+  "bugs": {
+    "url": "https://github.com/Johannes-Lionel/typetasks/issues"
+  },
+  "homepage": "https://github.com/Johannes-Lionel/typetasks#readme",
   "devDependencies": {
     "typescript": "^7.0.2"
   }
